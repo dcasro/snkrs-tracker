@@ -21,7 +21,7 @@ To install packages required
 ### Usage  
 
 To use the script call from within your virtualenv  
-  `./watcher.py --keywords="keyword1 keyword2 ..." --email-service="gmail" --email-user="joe" --email-pass="password"`
+  `./watcher.py --keywords keyword1 keyword2 ... --email bob@gmail.com --password secretpass --listserve joe@gmail.com bob@gmail.com`
 
 This should probably only run on machines you maintain just to make sure you password is safe and all
 
@@ -30,6 +30,6 @@ You can run this either on your own periodically or setup a cron job on your mac
 Point to your virtualenv for the python executable to make sure it has the packages your need
 
 In my case  
-  `~/virtualenvs/snkrsTracker/bin/python3.7 ./watcher.py --keywords="keyword1 keyword2 ..." --email-service="gmail" --email-user="joe" --email-pass="password"`
+  `~/virtualenvs/snkrsTracker/bin/python3.7 ./watcher.py --keywords keyword1 keyword2 ... --email bob@gmail.com --password secretpass --listserve joe@gmail.com bob@gmail.com`
 
 And just call that within your cron job and should email you if it finds match to your keywords
